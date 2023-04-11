@@ -1,11 +1,18 @@
 // JavaScript source code
 // Task 1
-var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
+var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake'];
 
-function logDairy(dairyproduct) {
-    console.log(`${dairyproduct}`)
-}
-dairy.forEach(logDairy);
+function logDairy() {   
+
+ for (Items of dairy) {   
+
+     console.log(Items);
+
+   } 
+
+};
+
+logDairy();
 
 
 // Task 2
@@ -17,25 +24,16 @@ const bird = Object.create(animal);
 bird.canFly = true;
 bird.hasFeathers = true;
 
-function birdCan() {
-    for (key of Object.keys(bird)) {
-        console.log(key, ":", bird[key])
+function birdCan (){
+    for( key of Object.keys(bird) ) {
+     console.log(key+": "+bird[key])
     }
 }
 
-birdCan();
+    birdCan();
 
 
 // Task 3
-
-const animal = {
-    canJump: true
-};
-
-const bird = Object.create(animal);
-bird.canFly = true;
-bird.hasFeathers = true;
-
 function animalCan() {
     for (key in bird) {
         console.log(key, ": " + bird[key])
